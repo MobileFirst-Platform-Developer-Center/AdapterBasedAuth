@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?><project-modules id="moduleCoreId" project-version="1.5.0">
+    <wb-module deploy-name="AdapterBasedAuth">
+        <wb-resource deploy-path="/" source-path="/apps/AdapterBasedAuth/common"/>
+        <wb-resource deploy-path="/" source-path="/apps/SingleStepAuth/common"/>
+        <wb-resource deploy-path="/" source-path="/apps/DoubleStepAuth/common"/>
+        <wb-resource deploy-path="/" source-path="/apps/SingleStepAuth/iphone"/>
+        <wb-resource deploy-path="/" source-path="/apps/DoubleStepAuth/iphone"/>
+        <property name="context-root" value="AdapterBasedAuth"/>
+    </wb-module>
+</project-modules>
