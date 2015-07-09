@@ -1,13 +1,15 @@
 IBM MobileFirst Platform Foundation
 ===
-### Sample Name
+### Adapter-based authentication
+Adapter-based authentication enables you to implement the entire authentication logic, including validation of the credentials, in a JavaScript adapter.
 
+This sample implements an adapter-based authentication mechanism that relies on a user name and a password.
 
 ### Usage
-Follow the instructions in the tutorials listed below.
+Follow the instructions in the tutorial(s) listed below.
 
 ### Tutorials
-
+https://developer.ibm.com/mobilefirstplatform/documentation/getting-started-7-1/foundation/authentication-security/adapter-based-authentication/
 
 ### Supported Levels
 IBM MobileFirst Platform Foundation 7.1
