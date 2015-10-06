@@ -18,7 +18,7 @@ function onAuthRequired(headers, errorMessage){
 	errorMessage = errorMessage ? errorMessage : null;
 	
 	return {
-		authRequired: true,
+		authStatus: "credentialsRequired",
 		errorMessage: errorMessage
 	};
 }
@@ -37,7 +37,7 @@ function submitAuthentication(username, password){
 		WL.Server.setActiveUser("AuthRealm", userIdentity);
 		
 		return { 
-			authRequired: false 
+			authStatus: "complete" 
 		};
 	}
 

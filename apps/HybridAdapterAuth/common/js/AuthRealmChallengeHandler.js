@@ -20,7 +20,7 @@ AuthRealmChallengeHandler.isCustomResponse = function(response) {
 	if (!response || !response.responseJSON	|| response.responseText === null) {
 		return false;
 	}
-	if (typeof(response.responseJSON.authRequired) !== 'undefined'){
+	if (typeof(response.responseJSON.authStatus) !== 'undefined'){
 		return true;
 	} else {
 		return false;
@@ -28,9 +28,9 @@ AuthRealmChallengeHandler.isCustomResponse = function(response) {
 };
 
 AuthRealmChallengeHandler.handleChallenge = function(response){
-	var authRequired = response.responseJSON.authRequired;
+	var authStatus = response.responseJSON.authStatus;
 
-	if (authRequired == true){
+	if (authStatus == "credentialsRequired"){
 		$("#AppDiv").hide();
 		$("#AuthDiv").show();
 		$("#AuthPassword").empty();
@@ -39,7 +39,7 @@ AuthRealmChallengeHandler.handleChallenge = function(response){
 		if (response.responseJSON.errorMessage)
 	    	$("#AuthInfo").html(response.responseJSON.errorMessage);
 		
-	} else if (authRequired == false){
+	} else if (authStatus == "complete"){
 		$("#AppDiv").show();
 		$("#AuthDiv").hide();
 		AuthRealmChallengeHandler.submitSuccess();
