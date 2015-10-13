@@ -20,7 +20,7 @@ limitations under the License.
 	<publicSigningKey/>
 	<packageName/>
 	<accessTokenExpiration>3600</accessTokenExpiration>
-	<userIdentityRealms/>
+	<userIdentityRealms>AuthRealm</userIdentityRealms>
 	<!--
         Define the target category for generating ADRESSABLE DEVICE license reports
         Possible values are 'UNDEFINED', 'B2E', 'B2C'
